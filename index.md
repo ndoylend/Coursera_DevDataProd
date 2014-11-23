@@ -94,5 +94,5 @@ Instead of providing a single point estimate, the probabilistic calculation prod
 
 The shiny application provides an interactive demonstration of the probabilistic calculation. The user can adjust the input parameters and see the effect on the output distribution. The user can also adjust the size of the random samples to see the effect on the shape of the distributions.
 
-The shiny application can be found [here](https://ndoylend.shinyapps.io/Coursera_DevDataProd/).
+The shiny application can be found [here](http://ndoylend.shinyapps.io/Coursera_DevDataProd/).
 
