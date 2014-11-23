@@ -80,17 +80,13 @@ If we randomly sample a large number of points from these distributions and calc
 
 ## Summary
 
-Instead of just providing a single point estimate, the probabilistic calculation produces a distribution of likely values, based on the uncertainty in the input data.
-
 *** =left
 
-### Shiny application
+### Probabilistic calculation
 
-The shiny application provides an interactive demonstration of the probabilistic calculation. The input data parameters can all be adjusted, along with the random sample size.
+Instead of providing a single point estimate, the probabilistic calculation produces a distribution of likely values, based on the uncertainty in the input data.
 
-*** =right
-
-```{r echo=FALSE, fig.align='center', out.height='400px'}
+```{r echo=FALSE, fig.align='center', out.height='350px'}
 # Define model function
 funModel <- function(input){
   with(input,{
@@ -117,9 +113,19 @@ mySim.mcs <- funSim.mcs(n)
 
 # Plot output distribution
 myMedian <- median(mySim.mcs$output)
+par(mar=c(5,4,0,2))
 plot(density(mySim.mcs$output), main = "",
      xlab = expression(paste("Daily Consumption (l/day)")))
 abline(v = myMedian, lty = "dotted")
 text(x = myMedian, y = 0,
      labels = paste0("Median = ", sprintf("%.2f", myMedian)))
 ```
+
+*** =right
+
+### Shiny application
+
+The shiny application provides an interactive demonstration of the probabilistic calculation. The user can adjust the input parameters and see the effect on the output distribution. The user can also adjust the size of the random samples to see the effect on the shape of the distributions.
+
+The shiny application can be found [here](https://ndoylend.shinyapps.io/Coursera_DevDataProd/).
+

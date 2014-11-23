@@ -80,14 +80,19 @@ If we randomly sample a large number of points from these distributions and calc
 
 ## Summary
 
-Instead of just providing a single point estimate, the probabilistic calculation produces a distribution of likely values, based on the uncertainty in the input data.
-
 *** =left
 
-### Shiny application
+### Probabilistic calculation
 
-The shiny application provides an interactive demonstration of the probabilistic calculation. The input data parameters can all be adjusted, along with the random sample size.
+Instead of providing a single point estimate, the probabilistic calculation produces a distribution of likely values, based on the uncertainty in the input data.
+
+<img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" height="350px" style="display: block; margin: auto;" />
 
 *** =right
 
-<img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" height="400px" style="display: block; margin: auto;" />
+### Shiny application
+
+The shiny application provides an interactive demonstration of the probabilistic calculation. The user can adjust the input parameters and see the effect on the output distribution. The user can also adjust the size of the random samples to see the effect on the shape of the distributions.
+
+The shiny application can be found [here](https://ndoylend.shinyapps.io/Coursera_DevDataProd/).
+
